@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Producto Integrador - Sitio Web responsivo con Flex y Grid</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+       /* Flex */
+        .intermedia ul {
+            /*  coloca aquí tu código  */
+            display:flex;
+            align-content:space-around;
+        }
+        .intermedia li {
+            /*  coloca aquí tu código  */
+            margin:10px;
+        
+        }
+        /* Grid */
+        @media screen and (min-width: 600px) {
+        .area-central-texto {
+            /*  coloca aquí tu código  */
+            display:grid;
+            grid-columns:50% 50%;
+        }
+        .area-central-texto p {
+            padding-top: 0;
+            column-count:2;
+        }
+        }
+        @media screen and (min-width: 800px) {
+            .sitio {
+            max-width: none;
+            /*  coloca aquí tu código  */
+            display:grid;
+            grid-template-columns:30% 30 30%;
+            }
+            .encabezado {
+            /*  coloca aquí tu código  */
+            grid-column:1/2;
+            grid-row:1/6;
+            }
+            .imagen {
+            /*  coloca aquí tu código  */
+            grid-column:2/4;
+            grid-row:1/3;
+            }
+            .principal {
+            /*  coloca aquí tu código  */
+            grid-column:2/4;
+            
+            }
+            .lateral {
+            /*  coloca aquí tu código  */
+            grid-column:2/4;
+            }
+            .pie-de-pagina {
+            /*  coloca aquí tu código  */
+            grid-column:1/4;
+            grid-row:6/7;
+            }
+        }
+        @media screen and (min-width: 1040px) {
+            .sitio {
+                /*  coloca aquí tu código  */
+            }
+            .imagen {
+                /*  coloca aquí tu código  */
+            }
+            .lateral {
+                /*  coloca aquí tu código  */
+            }
+            .pie-de-pagina {
+                /*  coloca aquí tu código  */
+            }
+            }
+
+        /*  */
+        body {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        }
+        h1, h2, h3, h4, h5, h6 {
+        clear: both;
+        }
+        p {
+        margin-bottom: 1.5em;
+        }
+        figure {
+        margin: 0;
+        padding: 0;
+        }
+        h1, h2, h3 {
+        text-align: center;
+        margin: 0;
+        padding: 1em 0;
+        }
+        p {
+        margin: 0;
+        padding: 1em 0;
+        }
+        img {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: auto;
+        }
+        .logo, .site-title {
+        text-align: center;
+        }
+        .logo {
+        font-size: 8em;
+        }
+        .site-title {
+        margin-top: -1em;
+        margin-bottom: 3em;
+        }
+
+        .area-central {
+        background: #FFF6E5;
+        padding-bottom: 2em;
+        }
+        .area-central-contenido {
+        padding: 1.5em;
+        }
+        .intermedia {
+        padding: 2em 1em 1em;
+        background: #3E454C;
+        }
+        .intermedia ul {
+        margin: 0;
+        padding: 0;
+        }
+        .intermedia li {
+        margin-bottom: 1em;
+        background: white;
+        list-style-type: none;
+        }
+        .area-intermedia {
+        padding: 1.5em;
+        }
+        .inferior {
+        padding: 2em;
+        background: #FFF6E5;
+        }
+        .contenido-inferior {
+        padding: 1.5em;
+        }
+        .lateral {
+        background: hsl(0, 0%, 90%);
+        }
+        .barra-lateral {
+        padding: 2em;
+        background: #B5AA9D;
+        color: white;
+        }
+        .barra-lateral:last-of-type {
+        background: #B9B7A7;
+        }
+        .pie-de-pagina {
+        padding: 2em;
+        background: #7C90A0;
+        color: white;
+        text-align: center;
+        }
+        .pie-de-pagina a {
+        color: white;
+        }
+        .pie-de-pagina a:hover, .pie-de-pagina a:focus {
+        border-bottom: 1px solid white;
+        } 
+    </style>
+    <body class="sitio">
+        <header class="encabezado">
+          <div class="logo">
+            <figure class="imagen">
+              <img src="https://assets.codepen.io/3434869/hotel-logo.png" />
+            </figure>
+          </div>
+        </header>
+      
+          <figure class="imagen">
+              <img src='https://images.unsplash.com/photo-1593224647849-0ef96ecc2bdd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+          </figure>
+      
+          <main id="content" class="principal">
+              <section class="area-central">
+                  <div class="area-central-contenido">
+                      <h2>Nuestro Hotel</h2>
+                      <div class="area-central-texto">
+                          <p>Relájese en uno de los más bellos destinos de la serranía visitado, desde hace más de 25 años, por turistas nacionales e internacionales, mientras nuestro personal cuida todos los detalles para hacer de su visita una experiencia inolvidable.</p>
+                      </div>
+                  </div>
+              </section>
+      
+              <section class="intermedia">
+                  <ul>
+                      <li>
+                          <img src='https://images.unsplash.com/photo-1595140082248-ecc0adaa2c06?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                          <div class="area-intermedia">
+                              <h3>Mirador</h3>
+                              <p>Esta estructura ha sido conservada en su totalidad; el techo reconstruido con carrizo, las maderas originales soportan el techo y sobre este, la tradicional teja de barro.</p>
+                          </div>
+                      </li>
+                      <li>
+                         <img src='https://images.unsplash.com/photo-1592960099755-3511a9e1ae27?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                          <div class="area-intermedia">
+                              <h3>Cascadas</h3>
+                              <p>Combinamos el recorrido con una caminata hasta las conocidas cascadas mágicas, un sitio donde el río cristalino fluye formando posas de agua poco profundas.</p>
+                          </div>
+                      </li>
+                  </ul>
+              </section>
+      
+              <section class="inferior">
+                  <div class="contenido-inferior">
+                      <h2>Casa De Campo</h2>
+                      <p>Son pequeños departamentos, ideales para familias o estadías largas, al igual que las suites campestres abren directamente al jardín y tienen patio privado.  Dos habitaciones y dos baños completos además de hidromasaje y cocina, sala y comedor. (100 m2)<p>
+                  </div>
+              </section>
+      
+          </main>
+      
+          <aside class="lateral">
+              <div class="barra-lateral">
+                  <h2>Alojamiento</h2>
+                  <p>Nuestro hotel cuenta con 78 habitaciones y suites diseñadas para ofrecer el máximo confort y bienestar a sus huéspedes.</p>
+              </div>
+              <div class="barra-lateral">
+                  <h2>Eventos Corporativos</h2>
+                  <p>8 salones destinados a reuniones corporativas, seminarios y capacitaciones así como también con 4,0000 mts2 de hermosos jardines con árboles patrimoniales.</p>
+              </div>
+          </aside>
+      
+          <footer class="pie-de-pagina">
+          <aside>Para mayor información, visite 
+            <a href="#" target="_blank" rel="nofollow">nuestro sitio</a>.
+          </footer>
+      
+      </body>
+</html>      
